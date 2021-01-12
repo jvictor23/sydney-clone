@@ -1,3 +1,57 @@
-.navbar > .a > .navbar-brand{
-    margin-left: 20px;
+/*espaçamento no topo da navbar*/
+.navbar{
+    padding-top: 15px;
+}
+
+/*espaçamento esquerdo da navbrand*/
+.navbar-brand{
+    padding-left: 106px;
+}
+
+/*espaçamento direito da barra onde encontra os nav-items*/
+.collapse{
+    padding-right: 160px;
+}
+
+/*barra onde se encontra os nav-items*/
+.navbar-nav{
+    width: 570px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*configurando nav-item*/
+.navbar-nav > .nav-item > a{
+    font-size: 15px;
+    color: #000000;
+    transition: color .5s;
+}
+
+/*transicao de cor nav-item*/
+.navbar-nav > .nav-item > a:hover{
+    
+    color: #6055ee;
+}
+
+
+
+/*botao de start da navbar*/
+
+.navbar-nav > .nav-item > button{
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+}
+
+/*transicao de cor buttonStart*/
+.navbar-nav > .nav-item > button:hover{
+    transition: color .7s;
+    transition: background-color .7s;
+    background-color: #7575DA;
+    color: white;
 }

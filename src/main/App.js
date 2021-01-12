@@ -4,7 +4,7 @@ import Navbar from '../app/components/navbar'
 
 const App = () => (
   <>
-    {/*Componente de barra de navegacao*/}
+    {/*Componente de barra de navegacao - navbar*/}
     <Navbar />
 
     {/*Componente de rotas*/}
