@@ -1,13 +1,15 @@
 import React from 'react';
+import Routes from './routes'
+import Navbar from '../app/components/navbar'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
+const App = () => (
+  <>
+    {/*Componente de barra de navegacao*/}
+    <Navbar />
 
-      </div>
-    );
-  }
-}
+    {/*Componente de rotas*/}
+    <Routes />
+  </>
+)
 
 export default App
