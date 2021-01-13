@@ -48,3 +48,23 @@ body{
   font-size: 40px;
 }
 
+.imgCartoes{
+  width: 550px;
+}
+
+/*Espaço superior da imagem de cartoes*/
+.space{
+  padding-top: 150px;
+}
+
+/*Titulo da seção de cartoes*/
+.titleCards{
+  font-size: 48px;
+  color: #393689;
+}
+/*Subtitulo da seção de cartoes*/
+.subtitleCards{
+  margin-top: 40px;
+  text-align: justify;
+  font-weight: 300;
+}

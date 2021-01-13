@@ -9,6 +9,7 @@ import nuvem from '../images/icons/nuvem.svg'
 import escudo from '../images/icons/escudo.svg'
 import mao from '../images/icons/mao.svg'
 import falante from '../images/icons/falante.svg'
+import cartoes from '../images/cartoes.webp'
 
 
 class Home extends React.Component {
@@ -74,7 +75,15 @@ class Home extends React.Component {
                             </div>
                         </div>
 
-
+                        <div className="row space">
+                            <div className="col-6">
+                                <img className="imgCartoes" src={cartoes} />
+                            </div>
+                            <div className="col-6">
+                                <h1 className="titleCards">Simple, Intuitive And Easy To Use</h1>
+                                <h6 className="subtitleCards">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
