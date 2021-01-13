@@ -1,3 +1,35 @@
+/*cor do fundo da pagina*/
 body{
   background-color: #D1E9FF;
 }
+
+/*Texto titulo*/
+.pageHeader > .title > h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 55px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393689;
+  font-size: 65px;
+}
+
+/*Texto conteudo*/
+.pageHeader > .content > h6{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35px;
+  padding-right: 13%;
+  padding-left: 13%;
+  text-align: center;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+/*botoes superiores*/
+.pageHeader > .content > .buttonsHeader{
+  padding-top: 50px;
+}
+

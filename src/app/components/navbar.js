@@ -4,7 +4,7 @@ import '../css/navbar.css'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg ">
+        <nav className="navbar navbar-expand-lg">
             <a className="navbar-brand" id="navbrand" href="/"><img src={logo} /></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
                 <span className="navbar-toggler-icon"></span>

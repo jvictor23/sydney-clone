@@ -1,0 +1,59 @@
+
+/*botao tipo 1*/
+.button1{
+    background-color: #7575DA;
+    color: #ffffff;
+    border: none;
+    padding: 17px 35px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+/*transicao botao tipo 1*/
+.button1:hover{
+    transition: background-color .7s;
+    background-color: #393689;
+}
+
+/*botao tipo 2*/
+.button2{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 17px 35px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+/*transicao botao tipo 2*/
+.button2:hover{
+    transition: color .7s;
+    transition: background-color .7s;
+    background-color: #393689;
+    color: #ffffff;
+}
+
+/*botao tipo 3*/
+.button3{
+    background-color: transparent;
+    border-style: solid;
+    border-color: #7575DA;
+    color: #393689;
+    padding: 17px 35px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+/*transicao botao tipo 3*/
+.button3:hover{
+    transition: color .7s;
+    transition: background-color .7s;
+    background-color: #7575DA;
+    color: #ffffff;
+}
+
+button:focus{
+    outline: none;
+}
