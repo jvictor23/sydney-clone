@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/home.css'
 import Botao from '../components/botao'
+import imgPerfil from '../images/perfil.png'
 
 class Home extends React.Component {
     render() {
@@ -24,6 +25,10 @@ class Home extends React.Component {
                                     <Botao text="See Pricing" type={2} />
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="imgPerfil">
+                            <img src={imgPerfil} width="100%" />
                         </div>
                     </div>
                 </div>
