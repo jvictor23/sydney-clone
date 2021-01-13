@@ -1,0 +1,56 @@
+
+/*Circulo creme*/
+.circulo1{
+    width: 80px;
+    height: 80px;
+    background-color: #FFF2E7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Circulo azul*/
+.circulo2{
+    width: 80px;
+    height: 80px;
+    background-color: #E4F3FF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circulo1 > img{
+    width: 35px;
+}
+
+.circulo2 > img{
+    width: 35px;
+}
+
+/*Transacao efeito cirulo 1*/
+.circulo1:hover{
+    transition: background-color .7s;
+    background-color: #393689;
+
+}
+
+/*Transacao efeito cirulo 2*/
+.circulo2:hover{
+    transition: background-color .7s;
+    background-color: #393689;
+
+}
+
+.title{
+    color: #393689;
+    font-size: 20px;
+}
+
+.subtitle{
+    font-weight: 300;
+}
