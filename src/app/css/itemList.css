@@ -1,0 +1,36 @@
+
+.list{
+    padding-top: 25px;
+}
+
+.list > ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /*Configurando letras*/
+.list > ul > li{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*Transicao na cor das letras*/
+.list > ul:hover{
+    color: #7575DA;
+    
+}
+
+/*Transicao na cor do icone*/
+ .list > ul:hover .fas{
+     color: #393689;
+     
+}
+
+/*Configurando icone*/
+  .list > ul > li > i{
+      padding-right: 15px;
+      font-size: 15px;
+      color: #7575DA;
+  }
+
+ 

@@ -10,6 +10,7 @@ import escudo from '../images/icons/escudo.svg'
 import mao from '../images/icons/mao.svg'
 import falante from '../images/icons/falante.svg'
 import cartoes from '../images/cartoes.webp'
+import ItemList from '../components/itemList'
 
 
 class Home extends React.Component {
@@ -82,6 +83,12 @@ class Home extends React.Component {
                             <div className="col-6">
                                 <h1 className="titleCards">Simple, Intuitive And Easy To Use</h1>
                                 <h6 className="subtitleCards">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
+
+                                <ItemList text="The text should be more aligned and in a small" />
+                                <ItemList text="Contrary to popular belief, Lorem Ipsum is not simply" />
+                                <ItemList text="All the Lorem Ipsum generators on the Internet tend" />
+                                <ItemList text="Sed ut perspiciatis unde omnis iste natus error sit" />
+                                <ItemList text="All the Lorem Ipsum generators on the Internet tend" />
                             </div>
                         </div>
 
