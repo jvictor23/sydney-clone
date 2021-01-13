@@ -4,8 +4,8 @@ import '../css/itemSolution.css'
 const ItemSolution = (props) => {
     return props.type === 1 ? (
 
-        <div className="row" style={{ paddingTop: '50px' }}>
-            <div className="col-3">
+        <div className="row">
+            <div className="col-3 ">
                 <div className="circulo1">
                     <img id="svg" className="svg" src={props.icon} />
                 </div>
@@ -16,7 +16,7 @@ const ItemSolution = (props) => {
             </div>
         </div>
 
-    ) : (<div className="row" style={{ paddingTop: '50px' }}>
+    ) : (<div className="row" >
         <div className="col-3">
             <div className="circulo2">
                 <img id="svg" className="svg" src={props.icon} />

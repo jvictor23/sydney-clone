@@ -68,3 +68,31 @@ body{
   text-align: justify;
   font-weight: 300;
 }
+
+/*Titulo da seção Work Faster*/
+.titleWorkFaster{
+  font-size: 48px;
+  color: #393689;
+  padding-top: 150px;
+}
+
+/*subtitulo da seção Work Faster*/
+.subtitleWorkFaster{
+  padding-top: 25px;
+  text-align: justify;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.titlePricing{
+  font-size: 48px;
+  color: #393689;
+  text-align: center;
+}
+
+.subtitlePricing{
+  padding-top: 30px;
+  font-weight: 300;
+  padding-bottom: 30px;
+  text-align: center;
+}

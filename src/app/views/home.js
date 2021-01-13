@@ -11,6 +11,8 @@ import mao from '../images/icons/mao.svg'
 import falante from '../images/icons/falante.svg'
 import cartoes from '../images/cartoes.webp'
 import ItemList from '../components/itemList'
+import Card from '../components/card'
+import Database from '../images/icons/database.svg'
 
 
 class Home extends React.Component {
@@ -50,7 +52,7 @@ class Home extends React.Component {
                         <h6>Consectetur adipiscing elit ut elit tellus, luctus nec ullamcorper mattis.</h6>
 
                         {/*Primeira fileira solutions*/}
-                        <div className="row">
+                        <div className="row" style={{ paddingTop: '50px' }}>
                             <div className="col-md-4">
                                 {/*Component solution*/}
                                 <ItemSolution type={1} icon={pincel} title="Professional tools" subtitle="Ipsum pendisse ultrices gravida accumsan lacus." />
@@ -64,7 +66,7 @@ class Home extends React.Component {
                         </div>
 
                         {/*Segunda fileira solutions*/}
-                        <div className="row">
+                        <div className="row" style={{ paddingTop: '50px' }}>
                             <div className="col-md-4">
                                 <ItemSolution type={2} icon={escudo} title="App integration" subtitle="Ipsum pendisse ultrices eyso gravida accumsan lacus." />
                             </div>
@@ -83,7 +85,7 @@ class Home extends React.Component {
                             <div className="col-6">
                                 <h1 className="titleCards">Simple, Intuitive And Easy To Use</h1>
                                 <h6 className="subtitleCards">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
-
+                                {/*Component Itens de lista com icone check*/}
                                 <ItemList text="The text should be more aligned and in a small" />
                                 <ItemList text="Contrary to popular belief, Lorem Ipsum is not simply" />
                                 <ItemList text="All the Lorem Ipsum generators on the Internet tend" />
@@ -91,6 +93,30 @@ class Home extends React.Component {
                                 <ItemList text="All the Lorem Ipsum generators on the Internet tend" />
                             </div>
                         </div>
+
+                        <div className="row space">
+                            <div className="col-6">
+                                <h1 className="titleWorkFaster">Work Faster With Powerful Tools.</h1>
+                                <h6 className="subtitleWorkFaster">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
+                                <Botao text="Start Free Trial" type={1} />
+                            </div>
+                            <div className="col-6">
+                                {/*Component Card com ItemSolution*/}
+                                <Card>
+                                    <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
+                                </Card>
+
+                                <Card float="right">
+                                    <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
+                                </Card>
+
+                                <Card>
+                                    <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
+                                </Card>
+                            </div>
+                        </div>
+
+
 
                     </div>
                 </div>
