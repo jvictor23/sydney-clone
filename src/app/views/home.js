@@ -19,9 +19,10 @@ import CardPricing from '../components/cardPricing'
 import analyze from '../images/analyze.webp'
 import Accordion from '../components/accordion'
 import CardApp from '../components/cardApp'
-import Caroulse from '../components/carousel'
 import Carousel from '../components/carousel'
-
+import CardComment from '../components/cardComment'
+import mulher from '../images/mulher.webp'
+import homem from '../images/homem.webp'
 
 class Home extends React.Component {
     render() {
@@ -175,7 +176,21 @@ class Home extends React.Component {
                         {/*Espaço Duplo*/}
                         <div className="space" />
                         <div className="space">
+                            {/*Component Carousel*/}
                             <Carousel />
+                        </div>
+
+                        <div className="space">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    {/*Component card comentario*/}
+                                    <CardComment imagem={mulher} nome="Amanda Lee" cargo="Ceo & Founder Crix" />
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <CardComment imagem={homem} nome="Adam Cheise" cargo="Head Of Sales , Intel" />
+                                </div>
+                            </div>
                         </div>
 
                     </div>

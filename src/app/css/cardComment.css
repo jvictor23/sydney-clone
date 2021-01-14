@@ -1,0 +1,65 @@
+/*Corpo do card*/
+.cardComment{
+    width: 550px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/*Icone*/
+.cardComment > i{
+    font-size: 40px;
+    color: #7575DA;
+}
+
+.cardComment > i:hover{
+    transition: transform .5s;
+    transform: scale(1.1);
+}
+
+/*Texto Click edit Button*/
+.cardComment > span{
+    text-align: center;
+    padding: 20px 62px 15px 62px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+/*Campo Perfil*/
+.cardComment > .perfil{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Imagem circular*/
+.cardComment > .perfil > .circuloImagem > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+/*Manter as informaçoes do perfil em coluna*/
+.cardComment > .perfil > .info{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Nome no perfil*/
+.cardComment > .perfil > .info > .nome{
+    font-size: 20px;
+    color: #393689;
+}
+
+/*Cargo no Perfil*/
+.cardComment > .perfil > .info > .cargo{
+    font-size: 15px;
+    color: #777777;
+    font-weight: 300;
+}
+
+
