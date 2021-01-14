@@ -18,6 +18,7 @@ import Intuitive from '../images/icons/intuitive.svg'
 import CardPricing from '../components/cardPricing'
 import analyze from '../images/analyze.webp'
 import Accordion from '../components/accordion'
+import CardApp from '../components/cardApp'
 
 
 class Home extends React.Component {
@@ -142,6 +143,24 @@ class Home extends React.Component {
                                     <h6 className="subtitleAnalyze">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
                                     {/*Component Accordion*/}
                                     <Accordion />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="space" />
+                        <div className="space">
+                            <h1 className="title7Days">Start Your 7 Days Free Trial!</h1>
+                            <h6 className="subtitle7Days">SYDNEY is Just What Your Business Needs  adipiscing elit ut elit tellus luctus</h6>
+                            <div className="row" style={{ paddingTop: '50px' }}>
+                                <div className="col-lg-6 d-flex justify-content-end">
+                                    <CardApp type={1} app="App Store">
+                                        <i aria-hidden="true" class="fab fa-apple" style={{ fontSize: '55px', color: 'white' }}></i>
+                                    </CardApp>
+                                </div>
+                                <div className="col-lg-6">
+                                    <CardApp type={2} app="App Store">
+                                        <i aria-hidden="true" class="fab fa-google-play" style={{ fontSize: '55px', color: '#7575DA' }}></i>
+                                    </CardApp>
                                 </div>
                             </div>
                         </div>
