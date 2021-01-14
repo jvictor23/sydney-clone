@@ -1,0 +1,11 @@
+.titleCarousel{
+    text-align: center;
+}
+
+.titleCarousel > span{
+    font-size: 25px;
+}
+
+.contentCarousel{
+    padding-top: 50px;
+}

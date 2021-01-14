@@ -19,6 +19,8 @@ import CardPricing from '../components/cardPricing'
 import analyze from '../images/analyze.webp'
 import Accordion from '../components/accordion'
 import CardApp from '../components/cardApp'
+import Caroulse from '../components/carousel'
+import Carousel from '../components/carousel'
 
 
 class Home extends React.Component {
@@ -147,22 +149,33 @@ class Home extends React.Component {
                             </div>
                         </div>
 
+                        {/*Espaço duplo*/}
                         <div className="space" />
                         <div className="space">
                             <h1 className="title7Days">Start Your 7 Days Free Trial!</h1>
                             <h6 className="subtitle7Days">SYDNEY is Just What Your Business Needs  adipiscing elit ut elit tellus luctus</h6>
                             <div className="row" style={{ paddingTop: '50px' }}>
                                 <div className="col-lg-6 d-flex justify-content-end">
+                                    {/*Component CardApp*/}
                                     <CardApp type={1} app="App Store">
+                                        {/*Icone fontawesome*/}
                                         <i aria-hidden="true" class="fab fa-apple" style={{ fontSize: '55px', color: 'white' }}></i>
                                     </CardApp>
                                 </div>
                                 <div className="col-lg-6">
+                                    {/*Component CardApp*/}
                                     <CardApp type={2} app="App Store">
+                                        {/*Icone fontawesome*/}
                                         <i aria-hidden="true" class="fab fa-google-play" style={{ fontSize: '55px', color: '#7575DA' }}></i>
                                     </CardApp>
                                 </div>
                             </div>
+                        </div>
+
+                        {/*Espaço Duplo*/}
+                        <div className="space" />
+                        <div className="space">
+                            <Carousel />
                         </div>
 
                     </div>
