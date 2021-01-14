@@ -84,15 +84,29 @@ body{
   padding-bottom: 30px;
 }
 
+/*Titulo da seção Pricing*/
 .titlePricing{
   font-size: 48px;
   color: #393689;
   text-align: center;
 }
 
+/*Subtitulo da seção Pricing*/
 .subtitlePricing{
   padding-top: 30px;
   font-weight: 300;
   padding-bottom: 30px;
   text-align: center;
+}
+
+/*Titulo da seção Analyze*/
+.titleAnalyze{
+  font-size: 48px;
+  color: #393689;
+}
+
+/*Subtitulo da seção Analyze*/
+.subtitleAnalyze{
+  padding-top: 30px;
+  font-weight: 300;
 }

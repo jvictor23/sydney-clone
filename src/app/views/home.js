@@ -16,6 +16,8 @@ import Database from '../images/icons/database.svg'
 import Analytics from '../images/icons/analytics.svg'
 import Intuitive from '../images/icons/intuitive.svg'
 import CardPricing from '../components/cardPricing'
+import analyze from '../images/analyze.webp'
+import Accordion from '../components/accordion'
 
 
 class Home extends React.Component {
@@ -124,6 +126,24 @@ class Home extends React.Component {
                             <h6 className="subtitlePricing">Consectetur adipiscing elit ut elit tellus, luctus nec ullamcorper mattis.</h6>
                             {/*Component de planos e preços*/}
                             <CardPricing />
+                        </div>
+
+                        <div className="space">
+                            <div className="row">
+                                <div className="col-lg-6 d-flex justify-content-center">
+                                    <div>
+                                        {/*image analyze your data*/}
+                                        {/*img-fluid classe boostrap para responsividade de imagens*/}
+                                        <img className="img-fluid" src={analyze} />
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <h1 className="titleAnalyze">Analyze Your Data With Our Analyze Tools</h1>
+                                    <h6 className="subtitleAnalyze">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
+                                    {/*Component Accordion*/}
+                                    <Accordion />
+                                </div>
+                            </div>
                         </div>
 
                     </div>

@@ -1,4 +1,4 @@
-.card{
+.cardWorkFaster{
     width: 450px;
     height: 160px;
     border-radius: 20px;
@@ -7,5 +7,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    background-color: white;
 }
 

@@ -11,7 +11,7 @@ const CardPricing = () => {
                     <span className="titlePlan">Personal</span>
                     <span className="price">$35</span>
                     <span className="month">Per month</span>
-                    <hr />
+                    <hr className="hrPricing" />
                     <span className="item">5GB Storage</span>
                     <span className="item">500 Users</span>
                     <span className="item">15 Domains</span>
@@ -29,7 +29,7 @@ const CardPricing = () => {
                     <span className="titlePlan">Team</span>
                     <span className="price">$95</span>
                     <span className="month">Per month</span>
-                    <hr />
+                    <hr className="hrPricing" />
                     <span className="item">10GB Storage</span>
                     <span className="item">Unlimited Users</span>
                     <span className="item">50 Domains</span>
@@ -44,7 +44,7 @@ const CardPricing = () => {
                     <span className="titlePlan">Company</span>
                     <span className="price">$49</span>
                     <span className="month">Per month</span>
-                    <hr />
+                    <hr className="hrPricing" />
                     <span className="item">100GB Storage</span>
                     <span className="item">Unlimited Users</span>
                     <span className="item">20 Domains</span>
