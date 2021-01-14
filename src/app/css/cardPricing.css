@@ -1,0 +1,70 @@
+/*Card*/
+.cardPricing{
+    
+    background-color: white;
+    border-radius: 20px;
+}
+/*Centralizando conteudo dentro da coluna*/
+.col-lg-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*titulo do plano*/
+.titlePlan{
+    
+    color: #7575DA;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+/*preço do plano*/
+.price{
+    font-size: 60px;
+    color: #393689;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/*per month*/
+.month{
+    padding-top: 5px;
+}
+
+/*barra vertica depois do per month*/
+hr{
+    width: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #8f8f8f;
+    padding-top: 2px;
+}
+
+/*Descricao do plano*/
+
+.item{
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+
+/*Efeito transicao item da descricao*/
+.item:hover{
+    color: #44418F;
+}
+
+/*padding nos botoes get started*/
+.botao{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*icone de estrelas*/
+.stars{
+    background-color:  #FF8A11;
+    padding: 1px 20px 2px 20px;
+    width: 80px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}

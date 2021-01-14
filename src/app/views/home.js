@@ -13,6 +13,9 @@ import cartoes from '../images/cartoes.webp'
 import ItemList from '../components/itemList'
 import Card from '../components/card'
 import Database from '../images/icons/database.svg'
+import Analytics from '../images/icons/analytics.svg'
+import Intuitive from '../images/icons/intuitive.svg'
+import CardPricing from '../components/cardPricing'
 
 
 class Home extends React.Component {
@@ -107,16 +110,21 @@ class Home extends React.Component {
                                 </Card>
 
                                 <Card float="right">
-                                    <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
+                                    <ItemSolution icon={Analytics} type={1} title="Embedded Analytics" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
                                 </Card>
 
                                 <Card>
-                                    <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
+                                    <ItemSolution icon={Intuitive} type={2} title="Easy and Intuitive" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
                                 </Card>
                             </div>
                         </div>
 
-
+                        <div className="space">
+                            <h1 className="titlePricing">Get In Reasonable Pricing Plean</h1>
+                            <h6 className="subtitlePricing">Consectetur adipiscing elit ut elit tellus, luctus nec ullamcorper mattis.</h6>
+                            {/*Component de planos e preços*/}
+                            <CardPricing />
+                        </div>
 
                     </div>
                 </div>
