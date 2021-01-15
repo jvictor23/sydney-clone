@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg">
             <a className="navbar-brand" id="navbrand" href="/"><img src={logo} /></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon" style={{ color: 'gray' }}></span>
             </button>
             {/*justfy-content-end manda a barra para o final da linha*/}
             <div className="collapse navbar-collapse justify-content-end" id="navbarNav">

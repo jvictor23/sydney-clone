@@ -29,16 +29,17 @@ class Home extends React.Component {
     render() {
         return (
             <>
+                {/*Parte de background da view home*/}
                 <div className="background">
                     <img className="wave" src={wave} />
                     <div className="partWave" />
-                    <div style={{ backgroundColor: '#F6F8FD', width: '100%', height: '460px' }} />
-                    <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1800px' }} />
-                    <div style={{ backgroundColor: '#FFF7F1', width: '100%', height: '520px' }} />
+                    <div style={{ backgroundColor: '#F6F8FD', width: '100%', height: '450px' }} />
+                    <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1820px' }} />
+                    <div style={{ backgroundColor: '#FFF7F1', width: '100%', height: '500px' }} />
                     <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1100PX' }} />
 
                 </div>
-                <div className="container">
+                <div className="container" style={{ paddingTop: '100px' }}>
                     <div className="pageHeader">
                         <div className="title">
                             {/*Titulo no cabeçalho da pagina*/}
