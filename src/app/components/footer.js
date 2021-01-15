@@ -80,9 +80,10 @@ const Footer = () => {
 
 
 
-            <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                © 2020 Copyright:
-    <a className="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <div className="text-start p-3" style={{ backgroundColor: '#111115', color: 'white', fontSize: '15px', fontWeight: '300' }}>
+                <div className="container">
+                    Proudly powered by WordPress | Theme: Sydney Pro by aThemes.
+                </div>
             </div>
 
         </footer>
