@@ -1,6 +1,10 @@
 /*espaçamento no topo da navbar*/
 .navbar{
     padding-top: 15px;
+    position: fixed;
+    background-color: #d1e9ffe3;
+    width: 100%;
+    overflow: hidden;
 }
 
 /*espaçamento esquerdo da navbrand*/
