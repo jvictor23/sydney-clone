@@ -1,0 +1,46 @@
+/*Footer Card*/
+.footer{
+    background-color: #F6F8FD;
+    height: 100%;
+}
+
+/*Container*/
+.container-xl{
+    height: 100%;
+}
+
+/*Div que esta pegando todo o conteudo*/
+.contain{
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;    
+}
+
+/*Descriçao debaixo da logo*/
+.descricao{
+    padding-top: 45px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/*ul que esta pegando a lista com os links*/
+.list-unstyled{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*links*/
+.list-unstyled > li > a{
+    color: #373445;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+/*Titulo de cada coluna*/
+.py-3{
+    color: #494693;
+}
