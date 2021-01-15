@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../images/logo.webp'
 import '../css/footer.css'
+import SocialMedia from '../components/socialMedia'
 const Footer = () => {
     return (
         /*Footer*/
@@ -16,6 +17,11 @@ const Footer = () => {
                             <img className="logo" src={logo} />
 
                             <span className="descricao">Eiusmod tempor incididunt ut labore et dolore magna aliqua. gravida lacus vel facilisis.</span>
+
+                            {/*Component SocialMedia*/}
+                            <div style={{ paddingTop: '50px', paddingLeft: '15px' }}>
+                                <SocialMedia />
+                            </div>
                         </div>
 
                         {/*Coluna 2*/}
