@@ -35,7 +35,7 @@ class Home extends React.Component {
                     <div style={{ backgroundColor: '#F6F8FD', width: '100%', height: '460px' }} />
                     <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1800px' }} />
                     <div style={{ backgroundColor: '#FFF7F1', width: '100%', height: '520px' }} />
-                    <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1000PX' }} />
+                    <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1100PX' }} />
 
                 </div>
                 <div className="container">
