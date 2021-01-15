@@ -22,7 +22,7 @@ const CardPricing = () => {
                 </div>
 
                 {/*Coluna 2*/}
-                <div className="col-lg-4" style={{ backgroundColor: '#FFF7F1' }}>
+                <div className="col-lg-4" style={{ backgroundColor: '#FFF7F1', borderLeft: 'solid 1px #EBEBEB', borderRight: 'solid 1px #EBEBEB' }}>
 
                     <img className="stars" src={Stars} />
 

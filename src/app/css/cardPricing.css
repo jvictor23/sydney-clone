@@ -3,6 +3,7 @@
     
     background-color: white;
     border-radius: 20px;
+    border: solid 1px #EBEBEB;
 }
 /*Centralizando conteudo dentro da coluna*/
 .col-lg-4{
