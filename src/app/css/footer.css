@@ -11,9 +11,10 @@
 
 /*Div que esta pegando todo o conteudo*/
 .contain{
-    padding-top: 70px;
+    padding-top: 50px;
     width: 100%;
-    height: 100%;    
+    height: 100%;
+    padding-bottom: 50px;    
 }
 
 /*Descriçao debaixo da logo*/
@@ -44,3 +45,4 @@
 .py-3{
     color: #494693;
 }
+

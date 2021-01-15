@@ -11,6 +11,10 @@
     
 }
 
+.circulo > i{
+    font-size: 19px;
+}
+
 .circulo:hover{
     color: #704BFA;
     cursor: pointer;

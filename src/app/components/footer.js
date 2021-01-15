@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../images/logo.webp'
 import '../css/footer.css'
 import SocialMedia from '../components/socialMedia'
+import ContactInfo from '../components/contactInfo'
 const Footer = () => {
     return (
         /*Footer*/
@@ -69,21 +70,7 @@ const Footer = () => {
                         {/*Coluna 4*/}
                         <div className="col-lg-4 col-md-6 mb-4 mb-md-0 align-items-start">
                             <h5 className="py-3">Contact info</h5>
-
-                            <ul className="list-unstyled">
-                                <li>
-
-                                </li>
-                                <li>
-
-                                </li>
-                                <li>
-
-                                </li>
-                                <li>
-
-                                </li>
-                            </ul>
+                            <ContactInfo />
                         </div>
 
                     </div>
