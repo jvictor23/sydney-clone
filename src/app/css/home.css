@@ -3,6 +3,25 @@ body{
   background-color: #D1E9FF;
 }
 
+.background{
+  position: absolute;
+  padding-top: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+/*Onda background*/
+.wave{
+  width: 100%;
+  z-index: -1;
+}
+
+.partWave{
+  width: 100%;
+  height: 1650px;
+  background-color: #ffffff;
+}
+
 /*Texto titulo*/
 .pageHeader > .title > h2 {
   display: flex;
