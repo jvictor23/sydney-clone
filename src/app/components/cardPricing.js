@@ -7,7 +7,7 @@ const CardPricing = () => {
         <div className="cardPricing">
             <div className="row">
                 {/*Coluna 1*/}
-                <div className="col-lg-4">
+                <div className="col-lg-4"  >
                     <span className="titlePlan">Personal</span>
                     <span className="price">$35</span>
                     <span className="month">Per month</span>
@@ -22,7 +22,7 @@ const CardPricing = () => {
                 </div>
 
                 {/*Coluna 2*/}
-                <div className="col-lg-4" style={{ backgroundColor: '#FFF7F1', borderLeft: 'solid 1px #EBEBEB', borderRight: 'solid 1px #EBEBEB' }}>
+                <div className="col-lg-4" style={{ backgroundColor: '#FFF7F1' }}>
 
                     <img className="stars" src={Stars} />
 
