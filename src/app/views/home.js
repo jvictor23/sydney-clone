@@ -119,7 +119,9 @@ class Home extends React.Component {
                                 <div className="col-lg-6">
                                     <h1 className="titleWorkFaster">Work Faster With Powerful Tools.</h1>
                                     <h6 className="subtitleWorkFaster">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
-                                    <Botao text="Start Free Trial" type={1} />
+                                    <div className="btnWorkFaster">
+                                        <Botao text="Start Free Trial" type={1} />
+                                    </div>
                                 </div>
                                 <div className="col-lg-6">
                                     {/*Component Card com ItemSolution*/}
