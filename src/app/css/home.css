@@ -143,6 +143,14 @@ body{
   padding-top: 20px;
 }
 
+/*Comportamentos ao atingir 991px*/
+@media only screen and (max-width: 991px) {
+  /*Tirar a visibilidae do subtitleCards*/
+  .subtitleCards{
+    visibility: hidden;
+  }
+}
+
 /*Comportamentos ao atingir 767px*/
 @media only screen and (max-width: 767px) {
   /*Centralizar botao 1*/

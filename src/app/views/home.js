@@ -116,12 +116,12 @@ class Home extends React.Component {
                             </div>
 
                             <div className="row space">
-                                <div className="col-6">
+                                <div className="col-lg-6">
                                     <h1 className="titleWorkFaster">Work Faster With Powerful Tools.</h1>
                                     <h6 className="subtitleWorkFaster">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
                                     <Botao text="Start Free Trial" type={1} />
                                 </div>
-                                <div className="col-6">
+                                <div className="col-lg-6">
                                     {/*Component Card com ItemSolution*/}
                                     <Card>
                                         <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
