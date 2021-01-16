@@ -100,10 +100,10 @@ class Home extends React.Component {
                             </div>
 
                             <div className="row space">
-                                <div className="col-6">
+                                <div className="col-lg-6 d-flex justify-content-center">
                                     <img className="imgCartoes" src={cartoes} />
                                 </div>
-                                <div className="col-6">
+                                <div className="col-lg-6 ">
                                     <h1 className="titleCards">Simple, Intuitive And Easy To Use</h1>
                                     <h6 className="subtitleCards">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
                                     {/*Component Itens de lista com icone check*/}
@@ -194,12 +194,12 @@ class Home extends React.Component {
 
                             <div className="space">
                                 <div className="row">
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-6 d-flex justify-content-center">
                                         {/*Component card comentario*/}
                                         <CardComment imagem={mulher} nome="Amanda Lee" cargo="Ceo & Founder Crix" />
                                     </div>
 
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-6 col-md-6 d-flex justify-content-center">
                                         <CardComment imagem={homem} nome="Adam Cheise" cargo="Head Of Sales , Intel" />
                                     </div>
                                 </div>

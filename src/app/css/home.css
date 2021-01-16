@@ -80,6 +80,7 @@ body{
 .titleCards{
   font-size: 48px;
   color: #393689;
+  text-align: center;
 }
 /*Subtitulo da seção de cartoes*/
 .subtitleCards{
