@@ -28,7 +28,7 @@ const Footer = () => {
 
 
                             {/*Component SocialMedia*/}
-                            <div className="media" style={{ paddingTop: '50px', paddingLeft: '15px' }}>
+                            <div className="media">
                                 <SocialMedia />
                             </div>
                         </div>

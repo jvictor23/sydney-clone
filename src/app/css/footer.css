@@ -46,6 +46,11 @@
     color: #494693;
 }
 
+.media{
+    padding-top: 50px;
+    padding-left: 15px ;
+}
+
 
 /*Comportamentos ao atingir 991px*/
 @media only screen and (max-width: 991px) {
@@ -53,5 +58,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding-left: 0;
     }
 }
