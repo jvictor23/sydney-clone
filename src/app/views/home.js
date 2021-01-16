@@ -33,10 +33,10 @@ class Home extends React.Component {
                 <div className="background">
                     <img className="wave" src={wave} />
                     <div className="partWave" />
-                    <div style={{ backgroundColor: '#F6F8FD', width: '100%', height: '450px' }} />
-                    <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1820px' }} />
-                    <div style={{ backgroundColor: '#FFF7F1', width: '100%', height: '500px' }} />
-                    <div style={{ backgroundColor: '#FFFFFF', width: '100%', height: '1100PX' }} />
+                    <div className="background1" />
+                    <div className="background2" />
+                    <div className="background3" />
+                    <div className="background4" />
 
                 </div>
                 <div className="container" style={{ paddingTop: '100px' }}>
@@ -174,14 +174,14 @@ class Home extends React.Component {
                                         {/*Component CardApp*/}
                                         <CardApp type={1} app="App Store">
                                             {/*Icone fontawesome*/}
-                                            <i aria-hidden="true" class="fab fa-apple" style={{ fontSize: '55px', color: 'white' }}></i>
+                                            <i aria-hidden="true" className="fab fa-apple" style={{ fontSize: '55px', color: 'white' }}></i>
                                         </CardApp>
                                     </div>
                                     <div className="col-lg-6 appCard">
                                         {/*Component CardApp*/}
                                         <CardApp type={2} app="App Store">
                                             {/*Icone fontawesome*/}
-                                            <i aria-hidden="true" class="fab fa-google-play" style={{ fontSize: '55px', color: '#7575DA' }}></i>
+                                            <i aria-hidden="true" className="fab fa-google-play" style={{ fontSize: '55px', color: '#7575DA' }}></i>
                                         </CardApp>
                                     </div>
                                 </div>

@@ -6,7 +6,7 @@ const ItemList = (props) => {
         <div className="list">
             <ul>
                 {/*Icone do fontawesome*/}
-                <li><i class="fas fa-check"></i>{props.text}</li>
+                <li><i className="fas fa-check"></i>{props.text}</li>
             </ul>
         </div>
     )

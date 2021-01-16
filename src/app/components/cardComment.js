@@ -4,7 +4,7 @@ const CardComment = (props) => {
     return (
         <div className="cardComment">
             {/*Icon fontawesome*/}
-            <i aria-hidden="true" class="fas fa-quote-left"></i>
+            <i aria-hidden="true" className="fas fa-quote-left"></i>
             <span>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</span>
             <div className="perfil">
                 <div className="circuloImagem">
