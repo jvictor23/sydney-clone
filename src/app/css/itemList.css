@@ -33,4 +33,11 @@
       color: #7575DA;
   }
 
+  /*Comportamentos ao atingir 991px*/
+  @media only screen and (max-width: 991px) {
+      /*Centralizando todos itens da lista*/
+      .list > ul{
+          text-align: center;
+      }
+  }
  
