@@ -201,7 +201,7 @@ class Home extends React.Component {
                                         <CardComment imagem={mulher} nome="Amanda Lee" cargo="Ceo & Founder Crix" />
                                     </div>
 
-                                    <div className="col-lg-6 col-md-6 d-flex justify-content-center">
+                                    <div className="col-lg-6 d-flex justify-content-center c">
                                         <CardComment imagem={homem} nome="Adam Cheise" cargo="Head Of Sales , Intel" />
                                     </div>
                                 </div>
