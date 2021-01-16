@@ -170,14 +170,14 @@ class Home extends React.Component {
                                 <h1 className="title7Days">Start Your 7 Days Free Trial!</h1>
                                 <h6 className="subtitle7Days">SYDNEY is Just What Your Business Needs  adipiscing elit ut elit tellus luctus</h6>
                                 <div className="row" style={{ paddingTop: '50px' }}>
-                                    <div className="col-lg-6 d-flex justify-content-end">
+                                    <div className="col-lg-6 appCard">
                                         {/*Component CardApp*/}
                                         <CardApp type={1} app="App Store">
                                             {/*Icone fontawesome*/}
                                             <i aria-hidden="true" class="fab fa-apple" style={{ fontSize: '55px', color: 'white' }}></i>
                                         </CardApp>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-6 appCard">
                                         {/*Component CardApp*/}
                                         <CardApp type={2} app="App Store">
                                             {/*Icone fontawesome*/}

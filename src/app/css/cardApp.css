@@ -1,16 +1,23 @@
 
 .cardApp{
     width: 300px;
-    
     border-radius: 15px;
 }
 
 .titleApp{
     font-weight: 100;
     font-size: 15px;
+    text-align: center;
 }
 
 .subtitleApp{
     font-size: 25px;
     color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .cardApp{
+        width: 100%;
+    }
 }

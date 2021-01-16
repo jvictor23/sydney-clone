@@ -144,6 +144,12 @@ body{
   padding-top: 20px;
 }
 
+.appCard:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 /*Comportamentos ao atingir 991px*/
 @media only screen and (max-width: 991px) {
   /*Tirar a visibilidae do subtitleCards*/
@@ -168,6 +174,17 @@ body{
   /*centralizando o subtitulo da secao workfaster*/
   .subtitleWorkFaster{
     text-align: center;
+  }
+
+  .appCard:nth-child(1){
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .appCard{
+    display: flex;
+    justify-content: center;
   }
 
 }
