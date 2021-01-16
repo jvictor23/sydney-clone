@@ -8,25 +8,33 @@ const Footer = () => {
         /*Footer*/
         <footer className=" text-center text-lg-start footer">
             {/*Container*/}
-            <div className="container-xl d-flex align-items-center">
+            <div className="container-xl">
                 {/*Div que esta pegando todo conteudo*/}
                 <div className="contain">
                     <div className="row">
                         {/*Coluna 1*/}
-                        <div className="col-lg-4  mb-4 mb-md-0 align-items-start">
+                        <div className="col-lg-4  mb-4 mb-md-0" >
                             {/*Logo*/}
-                            <img className="logo" src={logo} />
 
-                            <span className="descricao">Eiusmod tempor incididunt ut labore et dolore magna aliqua. gravida lacus vel facilisis.</span>
+                            <div className="row">
+                                <div className="col-lg-12" style={{ height: '30px' }}>
+                                    <img className="logo" src={logo} width="150px" height="50px" />
+                                </div>
+
+                                <div className="col-lg-12" style={{ paddingTop: '50px' }}>
+                                    <span className="descricao">Eiusmod tempor incididunt ut labore et dolore magna aliqua. gravida lacus vel facilisis.</span>
+                                </div>
+                            </div>
+
 
                             {/*Component SocialMedia*/}
-                            <div style={{ paddingTop: '50px', paddingLeft: '15px' }}>
+                            <div className="media" style={{ paddingTop: '50px', paddingLeft: '15px' }}>
                                 <SocialMedia />
                             </div>
                         </div>
 
                         {/*Coluna 2*/}
-                        <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div className="col-lg-2 ">
                             <h5 className="py-3">Company</h5>
 
                             <ul className="list-unstyled py-4">
@@ -47,7 +55,7 @@ const Footer = () => {
 
 
                         {/*Coluna 3*/}
-                        <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div className="col-lg-2 ">
                             <h5 className="py-3">Products</h5>
 
                             <ul className="list-unstyled mb-0 py-4">
@@ -68,7 +76,7 @@ const Footer = () => {
 
 
                         {/*Coluna 4*/}
-                        <div className="col-lg-4 col-md-6 mb-4 mb-md-0 align-items-start">
+                        <div className="col-lg-4 ">
                             <h5 className="py-3">Contact info</h5>
                             <ContactInfo />
                         </div>

@@ -5,7 +5,7 @@
     border-radius: 20px;
 }
 /*Centralizando conteudo dentro da coluna*/
-.col-lg-4{
+.colCardPricing{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,13 +76,13 @@
 /*Comportamento enquanto for >= 992px*/
 @media only screen and (min-width: 992px) {
     /*Criar angular a borda na coluna 1*/
-    .col-lg-4:nth-child(1){
+    .colCardPricing:nth-child(1){
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
     /*Criar angular a borda na coluna 3*/
-    .col-lg-4:nth-child(3){
+    .colCardPricing:nth-child(3){
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -91,13 +91,13 @@
 /*Comportamento ao atingir 991px*/
 @media only screen and (max-width: 991px) {
     /*Criar angular a borda na coluna 1*/
-    .col-lg-4:nth-child(1){
+    .colCardPricing:nth-child(1){
         border-top-left-radius: 20px ;
         border-top-right-radius: 20px;
     }
 
     /*Criar angular a borda na coluna 3*/
-    .col-lg-4:nth-child(3){
+    .colCardPricing:nth-child(3){
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
