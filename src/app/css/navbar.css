@@ -6,6 +6,8 @@
     width: 100%;
     overflow: hidden;
     display: flex;
+    transition: all .7s;
+    height: 100px;
 }
 
 /*espaçamento esquerdo da navbrand*/

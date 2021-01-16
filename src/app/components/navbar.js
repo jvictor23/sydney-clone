@@ -4,9 +4,21 @@ import '../css/navbar.css'
 import { Navbar, Nav } from 'react-bootstrap'
 
 const NavigationBar = () => {
+    /*Mudar tamanho da navbar de acordo com o tamanho do scroll*/
+    let navbar = document.getElementById('navbar');
+    let doc = document.documentElement;
+    window.addEventListener('scroll', function () {
+        /*Para pegar o valor total do scroll -> 100*scrollAtual/(scroll_total - tamanhoTela) */
+        let value = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
+        if (value > 1) {
+            navbar.style.height = "60px";
+        } else {
+            navbar.style.height = "100px";
+        }
+    })
     return (
         /*Nabar Reactbootstrap*/
-        <Navbar className="navbar" bg="ligth" expand="xl">
+        <Navbar id="navbar" className="navbar" bg="ligth" expand="xl">
             {/*Brand*/}
             <Navbar.Brand className="brand" href="/"><img src={logo} /></Navbar.Brand>
             {/*Botao toggle*/}
