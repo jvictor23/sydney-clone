@@ -54,7 +54,7 @@ class Home extends React.Component {
                             {/*Botoes no topo da pagina*/}
                             <div className="buttonsHeader">
                                 <div className="row">
-                                    <div className="col-md-6 d-flex justify-content-end">
+                                    <div className="col-md-6">
                                         <Botao text="Start Free Trial" type={1} />
                                     </div>
                                     <div className="col-md-6">

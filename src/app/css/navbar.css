@@ -64,10 +64,11 @@
     color: white;
 }
 
+/*Comportamento ao atingir 1199px*/
 @media only screen and (max-width: 1199px) {
     .collapse{
         padding-left: 0px;
-        padding-right: 0;
+        padding-right: 0px;
     }
 
     .navbar-nav > .nav-item > button{
