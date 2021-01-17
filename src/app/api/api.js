@@ -93,3 +93,37 @@ exports.card = [
 ];
 
 
+exports.pricing = [
+    {
+        titlePlan: "Personal",
+        price: "$35",
+        month: "Per month",
+        storage: "5GB Storage",
+        users: "500 Users",
+        domains: "15 Domains",
+        time: "1 Year Support",
+        typeButton: 3
+    },
+    {
+        titlePlan: "Team",
+        price: "$95",
+        month: "Per month",
+        storage: "10GB Storage",
+        users: "Unlimited Users",
+        domains: "50 Domains",
+        time: "Lifetime Support",
+        typeButton: 1
+    },
+    {
+        titlePlan: "Company",
+        price: "$49",
+        month: "Per month",
+        storage: "100GB Storage",
+        users: "Unlimited Users",
+        domains: "20 Domains",
+        time: "Lifetime Support",
+        typeButton: 3
+    }
+]
+
+

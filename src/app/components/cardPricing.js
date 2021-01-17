@@ -2,57 +2,45 @@ import React from 'react'
 import '../css/cardPricing.css'
 import Botao from '../components/botao'
 import Stars from '../images/icons/stars.svg'
-const CardPricing = () => {
+const CardPricing = (props) => {
     return (
         <div className="cardPricing">
             <div className="row">
-                {/*Coluna 1*/}
-                <div className="col-lg-4 colCardPricing">
-                    <span className="titlePlan">Personal</span>
-                    <span className="price">$35</span>
-                    <span className="month">Per month</span>
-                    <hr className="hrPricing" />
-                    <span className="item">5GB Storage</span>
-                    <span className="item">500 Users</span>
-                    <span className="item">15 Domains</span>
-                    <span className="item">1 Year Support</span>
-                    <div className="botao">
-                        <Botao text="Get Started" type={3} />
-                    </div>
-                </div>
 
-                {/*Coluna 2*/}
-                <div className="col-lg-4 colCardPricing" style={{ backgroundColor: '#FFF7F1' }}>
+                {props.list.map((item, i) => (
+                    i === 1 ? <div className="col-lg-4 colCardPricing" style={{ backgroundColor: '#FFF7F1' }}>
 
-                    <img className="stars" src={Stars} />
+                        <img className="stars" src={Stars} />
 
-                    <span className="titlePlan">Team</span>
-                    <span className="price">$95</span>
-                    <span className="month">Per month</span>
-                    <hr className="hrPricing" />
-                    <span className="item">10GB Storage</span>
-                    <span className="item">Unlimited Users</span>
-                    <span className="item">50 Domains</span>
-                    <span className="item">Lifetime Support</span>
-                    <div className="botao">
-                        <Botao text="Get Started" type={1} />
-                    </div>
-                </div>
+                        <span className="titlePlan">{item.titlePlan}</span>
+                        <span className="price">{item.price}</span>
+                        <span className="month">{item.month}</span>
+                        <hr className="hrPricing" />
+                        <span className="item">{item.storage}</span>
+                        <span className="item">{item.users}</span>
+                        <span className="item">{item.domains}</span>
+                        <span className="item">{item.time}</span>
+                        <div className="botao">
+                            <Botao text="Get Started" type={item.typeButton} />
+                        </div>
+                    </div> : <div className="col-lg-4 colCardPricing">
+                            <span className="titlePlan">{item.titlePlan}</span>
+                            <span className="price">{item.price}</span>
+                            <span className="month">{item.month}</span>
+                            <hr className="hrPricing" />
+                            <span className="item">{item.storage}</span>
+                            <span className="item">{item.users}</span>
+                            <span className="item">{item.domains}</span>
+                            <span className="item">{item.time}</span>
+                            <div className="botao">
+                                <Botao text="Get Started" type={item.typeButton} />
+                            </div>
+                        </div>
+                ))}
 
-                {/*Coluna 3*/}
-                <div className="col-lg-4 colCardPricing">
-                    <span className="titlePlan">Company</span>
-                    <span className="price">$49</span>
-                    <span className="month">Per month</span>
-                    <hr className="hrPricing" />
-                    <span className="item">100GB Storage</span>
-                    <span className="item">Unlimited Users</span>
-                    <span className="item">20 Domains</span>
-                    <span className="item">Lifetime Support</span>
-                    <div className="botao">
-                        <Botao text="Get Started" type={3} />
-                    </div>
-                </div>
+
+
+
             </div>
         </div>
     )

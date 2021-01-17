@@ -24,7 +24,8 @@ class Home extends React.Component {
         this.state = {
             itemSolution: [],
             itemList: [],
-            card: []
+            card: [],
+            pricing: []
         }
     }
 
@@ -32,6 +33,7 @@ class Home extends React.Component {
         this.setState({ itemSolution: api.itemSolution })
         this.setState({ itemList: api.itemList })
         this.setState({ card: api.card })
+        this.setState({ pricing: api.pricing })
     }
 
     render() {
@@ -133,7 +135,7 @@ class Home extends React.Component {
                                 <h1 className="titlePricing">Get In Reasonable Pricing Plean</h1>
                                 <h6 className="subtitlePricing">Consectetur adipiscing elit ut elit tellus, luctus nec ullamcorper mattis.</h6>
                                 {/*Component de planos e preços*/}
-                                <CardPricing />
+                                <CardPricing list={this.state.pricing} />
                             </div>
 
                             <div className="space">
