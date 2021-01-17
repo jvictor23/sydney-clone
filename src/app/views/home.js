@@ -25,12 +25,14 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            itemSolution: []
+            itemSolution: [],
+            itemList: []
         }
     }
 
     componentDidMount() {
         this.setState({ itemSolution: api.itemSolution })
+        this.setState({ itemList: api.itemList })
     }
 
     render() {
@@ -97,12 +99,11 @@ class Home extends React.Component {
                                 <div className="col-lg-6 ">
                                     <h1 className="titleCards">Simple, Intuitive And Easy To Use</h1>
                                     <h6 className="subtitleCards">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
-                                    {/*Component Itens de lista com icone check*/}
-                                    <ItemList text="The text should be more aligned and in a small" />
-                                    <ItemList text="Contrary to popular belief, Lorem Ipsum is not simply" />
-                                    <ItemList text="All the Lorem Ipsum generators on the Internet tend" />
-                                    <ItemList text="Sed ut perspiciatis unde omnis iste natus error sit" />
-                                    <ItemList text="All the Lorem Ipsum generators on the Internet tend" />
+                                    {this.state.itemList.map((item) => (
+                                        /*Component Itens de lista com icone check*/
+                                        <ItemList text="The text should be more aligned and in a small" />
+                                    ))
+                                    }
                                 </div>
                             </div>
 

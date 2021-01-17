@@ -45,6 +45,25 @@ exports.itemSolution =
             icon: falante.default
         },
 
-    ]
+    ];
+
+
+exports.itemList = [
+    {
+        text: "The text should be more aligned and in a small",
+    },
+    {
+        text: "Contrary to popular belief, Lorem Ipsum is not simply",
+    },
+    {
+        text: "All the Lorem Ipsum generators on the Internet tend",
+    },
+    {
+        text: "Sed ut perspiciatis unde omnis iste natus error sit",
+    },
+    {
+        text: "All the Lorem Ipsum generators on the Internet tend",
+    }
+]
 
 
