@@ -4,6 +4,9 @@ const escudo = require('../images/icons/escudo.svg')
 const mao = require('../images/icons/mao.svg')
 const falante = require('../images/icons/falante.svg')
 const pincel = require('../images/icons/pincel.svg')
+const database = require('../images/icons/database.svg')
+const analytics = require('../images/icons/analytics.svg')
+const intuitive = require('../images/icons/intuitive.svg')
 
 exports.itemSolution =
     [
@@ -64,6 +67,29 @@ exports.itemList = [
     {
         text: "All the Lorem Ipsum generators on the Internet tend",
     }
-]
+];
+
+
+exports.card = [
+    {
+        type: 2,
+        title: "Analyze Your Data",
+        subtitle: "Click edit button to change this text lorem ipsum dolor sit amet tellus.",
+        icon: database.default
+    },
+    {
+        type: 1,
+        title: "Embedded Analytics",
+        subtitle: "Click edit button to change this text lorem ipsum dolor sit amet tellus.",
+        icon: analytics.default
+    },
+    {
+        type: 2,
+        title: "Easy and Intuitive",
+        subtitle: "Click edit button to change this text lorem ipsum dolor sit amet tellus.",
+        icon: intuitive.default
+    },
+
+];
 
 

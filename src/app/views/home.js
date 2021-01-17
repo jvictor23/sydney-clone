@@ -6,9 +6,6 @@ import ItemSolution from '../components/itemSolution'
 import cartoes from '../images/cartoes.webp'
 import ItemList from '../components/itemList'
 import Card from '../components/card'
-import Database from '../images/icons/database.svg'
-import Analytics from '../images/icons/analytics.svg'
-import Intuitive from '../images/icons/intuitive.svg'
 import CardPricing from '../components/cardPricing'
 import analyze from '../images/analyze.webp'
 import Accordion from '../components/accordion'
@@ -26,13 +23,15 @@ class Home extends React.Component {
         super(props);
         this.state = {
             itemSolution: [],
-            itemList: []
+            itemList: [],
+            card: []
         }
     }
 
     componentDidMount() {
         this.setState({ itemSolution: api.itemSolution })
         this.setState({ itemList: api.itemList })
+        this.setState({ card: api.card })
     }
 
     render() {
@@ -116,18 +115,17 @@ class Home extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    {/*Component Card com ItemSolution*/}
-                                    <Card>
-                                        <ItemSolution icon={Database} type={2} title="Analyze Your Data" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
-                                    </Card>
-
-                                    <Card float="right">
-                                        <ItemSolution icon={Analytics} type={1} title="Embedded Analytics" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
-                                    </Card>
-
-                                    <Card>
-                                        <ItemSolution icon={Intuitive} type={2} title="Easy and Intuitive" subtitle="Click edit button to change this text lorem ipsum dolor sit amet tellus." />
-                                    </Card>
+                                    {/*Component Card com ItemSolution*/
+                                        this.state.card.map((card, i) => (
+                                            /*Se a posição de i for impar o card recebe o float rigth*/
+                                            i % 2 !== 0 ?
+                                                <Card float="right">
+                                                    <ItemSolution icon={card.icon} type={card.type} title={card.title} subtitle={card.subtitle} />
+                                                </Card> : <Card >
+                                                    <ItemSolution icon={card.icon} type={card.type} title={card.title} subtitle={card.subtitle} />
+                                                </Card>
+                                        ))
+                                    }
                                 </div>
                             </div>
 
