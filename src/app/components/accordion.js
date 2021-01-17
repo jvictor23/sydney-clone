@@ -3,26 +3,9 @@ import '../css/accordion.css'
 
 class AccordionApp extends React.Component {
     render() {
-
-        const hiddenTexts = [{
-            label: 'Organize your data',
-            value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
-        },
-        {
-            label: 'Aways in sync.',
-            value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
-        },
-        {
-            label: 'Work with any team.',
-            value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
-        },
-        {
-            label: 'Business analytics',
-            value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
-        }];
         return (
             <div>
-                <Accordion hiddenTexts={hiddenTexts} />
+                <Accordion hiddenTexts={this.props.hiddenTexts} />
             </div>
         );
     }

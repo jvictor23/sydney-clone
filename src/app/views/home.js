@@ -25,7 +25,8 @@ class Home extends React.Component {
             itemSolution: [],
             itemList: [],
             card: [],
-            pricing: []
+            pricing: [],
+            accordion: []
         }
     }
 
@@ -34,6 +35,7 @@ class Home extends React.Component {
         this.setState({ itemList: api.itemList })
         this.setState({ card: api.card })
         this.setState({ pricing: api.pricing })
+        this.setState({ accordion: api.accordion })
     }
 
     render() {
@@ -151,7 +153,7 @@ class Home extends React.Component {
                                         <h1 className="titleAnalyze">Analyze Your Data With Our Analyze Tools</h1>
                                         <h6 className="subtitleAnalyze">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h6>
                                         {/*Component Accordion*/}
-                                        <Accordion />
+                                        <Accordion hiddenTexts={this.state.accordion} />
                                     </div>
                                 </div>
                             </div>
