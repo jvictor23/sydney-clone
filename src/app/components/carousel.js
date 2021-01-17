@@ -1,22 +1,23 @@
 import React from 'react'
 import '../css/carousel.css'
 import InfiniteCarousel from 'react-leaf-carousel';
+
 const Carousel = () => {
+    /*Pegar largura em pixels da tela*/
+    var width = window.screen.width;
     return (
         <div className="container">
             <div className="titleCarousel">
                 <span>More than 2,2 millionpeople across 55,000 companies choose Sydney</span>
             </div>
-
             <div className="contentCarousel">
                 <InfiniteCarousel
 
-                    dots={true}/*Mostrar os pontos no carousel*/
                     showSides={true}
                     sidesOpacity={0.9}
                     sideSize={0.1}
                     slidesToScroll={3}/*Passar quantas imagens por vez no carousel*/
-                    slidesToShow={6}/*Mostrar quantas imagens por vez no carousel*/
+                    slidesToShow={width > 1199 ? 6 : width <= 1199 && width >= 991 ? 2 : 1}/*Mostrar quantas imagens por vez no carousel*/
                     scrollOnDevice={true}
                     cycleInterval={true}
                 >
@@ -72,7 +73,7 @@ const Carousel = () => {
                 </InfiniteCarousel>
             </div>
 
-        </div>
+        </div >
     )
 }
 
