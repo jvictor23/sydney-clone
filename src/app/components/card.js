@@ -3,7 +3,9 @@ import '../css/card.css'
 const Card = (props) => {
     return (
         <div className="cardWorkFaster" style={{ float: props.float }}>
-            {props.children}
+            <div className="content">
+                {props.children}
+            </div>
         </div>
     )
 }

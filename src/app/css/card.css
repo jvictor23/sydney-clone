@@ -11,13 +11,19 @@
     border: solid 1px #EBEBEB;
 }
 
+.cardWorkFaster > .content{
+    padding-left: 20px;
+}
+
 /*Comportamento ao atingir 991px*/
 @media only screen and (max-width: 991px) {
     .cardWorkFaster{
         width: 100%;
         height: 200px;
         justify-content: start;
-        padding-left: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
 }
 

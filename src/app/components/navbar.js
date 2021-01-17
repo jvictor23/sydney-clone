@@ -5,15 +5,14 @@ import { Navbar, Nav } from 'react-bootstrap'
 
 const NavigationBar = () => {
     /*Mudar tamanho da navbar de acordo com o tamanho do scroll*/
-    let navbar = document.getElementById('navbar');
     let doc = document.documentElement;
     window.addEventListener('scroll', function () {
         /*Para pegar o valor total do scroll -> 100*scrollAtual/(scroll_total - tamanhoTela) */
         let value = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight))
         if (value > 1) {
-            navbar.style.height = "60px";
+            document.getElementById('navbar').style.height = "60px";
         } else {
-            navbar.style.height = "100px";
+            document.getElementById('navbar').style.height = "100px";
         }
     })
     return (
