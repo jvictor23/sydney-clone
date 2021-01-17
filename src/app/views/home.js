@@ -3,12 +3,6 @@ import '../css/home.css'
 import Botao from '../components/botao'
 import imgPerfil from '../images/perfil.png'
 import ItemSolution from '../components/itemSolution'
-import pincel from '../images/icons/pincel.svg'
-import engrenagem from '../images/icons/engrenagem.svg'
-import nuvem from '../images/icons/nuvem.svg'
-import escudo from '../images/icons/escudo.svg'
-import mao from '../images/icons/mao.svg'
-import falante from '../images/icons/falante.svg'
 import cartoes from '../images/cartoes.webp'
 import ItemList from '../components/itemList'
 import Card from '../components/card'
@@ -24,9 +18,23 @@ import CardComment from '../components/cardComment'
 import mulher from '../images/mulher.webp'
 import homem from '../images/homem.webp'
 import wave from '../images/icons/wave.svg'
+import api from '../api/api'
 
 class Home extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            itemSolution: []
+        }
+    }
+
+    componentDidMount() {
+        this.setState({ itemSolution: api.itemSolution })
+    }
+
     render() {
+
         return (
             <>
                 {/*Parte de background da view home*/}
@@ -72,31 +80,14 @@ class Home extends React.Component {
                             <h3>Our Solution For You</h3>
                             <h6>Consectetur adipiscing elit ut elit tellus, luctus nec ullamcorper mattis.</h6>
 
-                            {/*Primeira fileira solutions*/}
+                            {/*solutions*/}
                             <div className="row" style={{ paddingTop: '50px' }}>
-                                <div className="col-md-4">
-                                    {/*Component solution*/}
-                                    <ItemSolution type={1} icon={pincel} title="Professional tools" subtitle="Ipsum pendisse ultrices gravida accumsan lacus." />
-                                </div>
-                                <div className="col-md-4">
-                                    <ItemSolution type={2} icon={engrenagem} title="Fully customizable" subtitle="Ipsum pendisse ultrices eyso gravida accumsan lacus." />
-                                </div>
-                                <div className="col-md-4">
-                                    <ItemSolution type={1} icon={nuvem} title="Saved to the cloud" subtitle="Quis ipsum pendisse ultrices gravida accumsan lacus." />
-                                </div>
-                            </div>
-
-                            {/*Segunda fileira solutions*/}
-                            <div className="row" style={{ paddingTop: '50px' }}>
-                                <div className="col-md-4">
-                                    <ItemSolution type={2} icon={escudo} title="App integration" subtitle="Ipsum pendisse ultrices eyso gravida accumsan lacus." />
-                                </div>
-                                <div className="col-md-4">
-                                    <ItemSolution type={1} icon={mao} title="Eassy to use" subtitle="Ipsum pendisse ultrices eyso gravida accumsan lacus." />
-                                </div>
-                                <div className="col-md-4">
-                                    <ItemSolution type={2} icon={falante} title="Maketing" subtitle="Ipsum pendisse ultrices eyso gravida accumsan lacus." />
-                                </div>
+                                {this.state.itemSolution.map((item) =>
+                                    <div className="col-md-4" style={{ paddingTop: '30px' }}>
+                                        {/*Component solution*/}
+                                        <ItemSolution type={item.type} icon={item.icon} title={item.title} subtitle={item.subtitle} />
+                                    </div>
+                                )}
                             </div>
 
                             <div className="row space">
