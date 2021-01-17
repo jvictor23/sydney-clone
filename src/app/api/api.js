@@ -143,4 +143,19 @@ exports.accordion = [{
     value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
 }];
 
+exports.cardApp = [
+    {
+        class: "fab fa-apple",
+        storeApp: "App Store",
+        type: 1,
+        color: "#FFFFFF"
+    },
+    {
+        class: "fab fa-google-play",
+        storeApp: "Play Store",
+        type: 2,
+        color: "#7575DA"
+    }
+]
+
 

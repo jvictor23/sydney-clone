@@ -26,7 +26,8 @@ class Home extends React.Component {
             itemList: [],
             card: [],
             pricing: [],
-            accordion: []
+            accordion: [],
+            cardApp: []
         }
     }
 
@@ -36,6 +37,7 @@ class Home extends React.Component {
         this.setState({ card: api.card })
         this.setState({ pricing: api.pricing })
         this.setState({ accordion: api.accordion })
+        this.setState({ cardApp: api.cardApp })
     }
 
     render() {
@@ -164,20 +166,17 @@ class Home extends React.Component {
                                 <h1 className="title7Days">Start Your 7 Days Free Trial!</h1>
                                 <h6 className="subtitle7Days">SYDNEY is Just What Your Business Needs  adipiscing elit ut elit tellus luctus</h6>
                                 <div className="row" style={{ paddingTop: '50px' }}>
-                                    <div className="col-lg-6 appCard">
-                                        {/*Component CardApp*/}
-                                        <CardApp type={1} app="App Store">
-                                            {/*Icone fontawesome*/}
-                                            <i aria-hidden="true" className="fab fa-apple" style={{ fontSize: '55px', color: 'white' }}></i>
-                                        </CardApp>
-                                    </div>
-                                    <div className="col-lg-6 appCard">
-                                        {/*Component CardApp*/}
-                                        <CardApp type={2} app="App Store">
-                                            {/*Icone fontawesome*/}
-                                            <i aria-hidden="true" className="fab fa-google-play" style={{ fontSize: '55px', color: '#7575DA' }}></i>
-                                        </CardApp>
-                                    </div>
+                                    {
+                                        this.state.cardApp.map((item) => (
+                                            <div className="col-lg-6 appCard">
+                                                {/*Component CardApp*/}
+                                                <CardApp type={item.type} app={item.storeApp}>
+                                                    {/*Icone fontawesome*/}
+                                                    <i aria-hidden="true" className={item.class} style={{ fontSize: '55px', color: item.color }}></i>
+                                                </CardApp>
+                                            </div>
+                                        ))
+                                    }
                                 </div>
                             </div>
 
