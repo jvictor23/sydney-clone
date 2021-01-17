@@ -7,3 +7,7 @@
     font-weight: 300;
     font-size: 15px;
 }
+
+.list-unstyled > li:hover .icon{
+    color: #9B9BFC;
+}
