@@ -27,7 +27,8 @@ class Home extends React.Component {
             card: [],
             pricing: [],
             accordion: [],
-            cardApp: []
+            cardApp: [],
+            cardComment: []
         }
     }
 
@@ -38,6 +39,7 @@ class Home extends React.Component {
         this.setState({ pricing: api.pricing })
         this.setState({ accordion: api.accordion })
         this.setState({ cardApp: api.cardApp })
+        this.setState({ cardComment: api.cardComment })
     }
 
     render() {
@@ -189,14 +191,14 @@ class Home extends React.Component {
 
                             <div className="space">
                                 <div className="row">
-                                    <div className="col-lg-6 d-flex justify-content-center">
-                                        {/*Component card comentario*/}
-                                        <CardComment imagem={mulher} nome="Amanda Lee" cargo="Ceo & Founder Crix" />
-                                    </div>
-
-                                    <div className="col-lg-6 d-flex justify-content-center c">
-                                        <CardComment imagem={homem} nome="Adam Cheise" cargo="Head Of Sales , Intel" />
-                                    </div>
+                                    {
+                                        this.state.cardComment.map((item) => (
+                                            <div className="col-lg-6 d-flex justify-content-center">
+                                                {/*Component card comentario*/}
+                                                <CardComment imagem={item.imagem} nome={item.nome} cargo={item.cargo} comentario={item.comentario} />
+                                            </div>
+                                        ))
+                                    }
                                 </div>
                             </div>
 

@@ -7,6 +7,8 @@ const pincel = require('../images/icons/pincel.svg')
 const database = require('../images/icons/database.svg')
 const analytics = require('../images/icons/analytics.svg')
 const intuitive = require('../images/icons/intuitive.svg')
+const mulher = require('../images/mulher.webp')
+const homem = require("../images/homem.webp")
 
 exports.itemSolution =
     [
@@ -155,6 +157,21 @@ exports.cardApp = [
         storeApp: "Play Store",
         type: 2,
         color: "#7575DA"
+    }
+]
+
+exports.cardComment = [
+    {
+        comentario: "Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        nome: "Amanda Lee",
+        cargo: "Ceo & Founder Crix",
+        imagem: mulher.default
+    },
+    {
+        comentario: "Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        nome: "Adam Cheise",
+        cargo: "Head Of Sales , Intel",
+        imagem: homem.default
     }
 ]
 
